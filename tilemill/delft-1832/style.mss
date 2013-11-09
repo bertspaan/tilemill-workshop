@@ -16,11 +16,11 @@
 // Elements:
   
 Map {
-  background-image : url("paper2.jpg");
+  background-image : url("paper.jpg");
 }
 
 #gebouwen1832::pattern {
-  polygon-pattern-file : url("paper2.jpg");  
+  polygon-pattern-file : url("paper.jpg");  
 }
 
 #gebouwen1832 {
