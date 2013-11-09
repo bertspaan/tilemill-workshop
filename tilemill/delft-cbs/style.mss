@@ -1,40 +1,39 @@
 Map {
-  background-color: #000;
+  font-directory: url(./fonts);  
 }
 
-#buildings {
-  [YEAR<1800] {
-    polygon-fill: #A50026;
-  }
-  [YEAR>=1800][YEAR<1850] {
-    polygon-fill: #D73027;
-  }
-  [YEAR>=1850][YEAR<1900] {
-    polygon-fill: #F46D43;
-  }
-  [YEAR>=1900][YEAR<1930] {
-    polygon-fill: #FDAE61;
-  }
-  [YEAR>=1930][YEAR<1945] {
-    polygon-fill: #FEE090;
-  }
-  [YEAR>=1945][YEAR<1960] {
-    polygon-fill: #FFFFBF;
-  }
-  [YEAR>=1960][YEAR<1975] {
-    polygon-fill: #E0F3F8;
-  }
-  [YEAR>=1975][YEAR<1985] {
-     polygon-fill: #ABD9E9;
-  }
-  [YEAR>=1985][YEAR<1995] {
-    polygon-fill: #74ADD1;
-  }
-  [YEAR>=1995][YEAR<2005] {
-    polygon-fill: #4575B4;
-  }
-  [YEAR>=2005] {
-    polygon-fill: #313695;
-  } 
+#buurt { 
+  line-color: black;
+  line-width: 0.8;
   
+  [BEV_DICHTH < 1000] {
+    polygon-fill: #ffffb2;
+  }
+  
+  [BEV_DICHTH >= 1000][BEV_DICHTH < 8000] {
+    polygon-fill: #fecc5c;
+  }
+  
+  [BEV_DICHTH >= 8000][BEV_DICHTH < 15000] {
+    polygon-fill: #fd8d3c;
+  }
+  
+  [BEV_DICHTH >= 15000] {
+    polygon-fill: #e31a1c;
+  }
+}
+
+#labels { 
+  text-name: "[BU_NAAM]";
+  text-face-name: "Open Sans Regular","DejaVu Sans Book","unifont Medium";
+  text-placement-type: simple;
+  text-placements: "N";
+  text-dy: 3;
+  text-dx: 3;    
+  text-size: 12;
+  text-wrap-width: 60;
+  text-wrap-before: true;
+  text-halo-radius: 1.2;
+  text-halo-fill: #fff;
+  text-min-distance: 2;
 }
