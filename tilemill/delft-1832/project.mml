@@ -1,52 +1,24 @@
 {
   "bounds": [
-    3.7106,
-    51.5087,
-    5.636,
-    52.4878
+    4.3346,
+    51.9926,
+    4.3992,
+    52.0305
   ],
   "center": [
-    4.6143,
-    52.0778,
-    9
+    4.3633,
+    52.0109,
+    14
   ],
   "format": "png8",
   "interactivity": false,
-  "minzoom": 9,
-  "maxzoom": 15,
+  "minzoom": 14,
+  "maxzoom": 18,
   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
   "Stylesheet": [
     "style.mss"
   ],
   "Layer": [
-    {
-      "id": "countries",
-      "name": "countries",
-      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "geometry": "polygon",
-      "Datasource": {
-        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
-        "type": "shape"
-      }
-    },
-    {
-      "geometry": "polygon",
-      "extent": [
-        4.227161933620177,
-        52.061766502903204,
-        4.300503236494212,
-        52.08683586041899
-      ],
-      "id": "delft",
-      "class": "",
-      "Datasource": {
-        "file": "https://gist.github.com/bertspaan/fb84b09154627e15f97e/raw/819d6150cafca337fe18adca72b77cfe3f75e8c8/map.geojson"
-      },
-      "srs-name": "autodetect",
-      "srs": "",
-      "advanced": {},
-      "name": "delft"
-    },
     {
       "geometry": "polygon",
       "extent": [
@@ -61,17 +33,38 @@
         "file": "https://github.com/bertspaan/tilemill-workshop/raw/gh-pages/data/1832/delft_1832.zip",
         "id": "delft1832",
         "project": "delft-1832",
-        "srs": "+proj=stere +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.999908 +x_0=155000 +y_0=463000 +ellps=bessel +units=m +no_defs  no_defs <>"
+        "srs": "+proj=stere +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.999908 +x_0=155000 +y_0=463000 +ellps=bessel +units=m +no_defs  no_defs"
       },
       "srs-name": "custom",
-      "srs": "+proj=stere +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.999908 +x_0=155000 +y_0=463000 +ellps=bessel +units=m +no_defs  no_defs <>",
+      "srs": "+proj=stere +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.999908 +x_0=155000 +y_0=463000 +ellps=bessel +units=m +no_defs  no_defs",
       "advanced": {},
       "name": "delft1832"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        4.346214254209176,
+        51.96321920815347,
+        4.430728955741397,
+        52.04099479892081
+      ],
+      "id": "gebouwen1832",
+      "class": "",
+      "Datasource": {
+        "file": "https://github.com/bertspaan/tilemill-workshop/raw/gh-pages/data/1832/gebouwen_1832.zip",
+        "id": "gebouwen1832",
+        "project": "delft-1832",
+        "srs": "+proj=stere +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.999908 +x_0=155000 +y_0=463000 +ellps=bessel +units=m +no_defs  no_defs"
+      },
+      "srs-name": "custom",
+      "srs": "+proj=stere +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.999908 +x_0=155000 +y_0=463000 +ellps=bessel +units=m +no_defs  no_defs",
+      "advanced": {},
+      "name": "gebouwen1832"
     }
   ],
   "scale": 1,
   "metatile": 2,
-  "name": "",
+  "name": "Delft 1832",
   "description": "",
   "attribution": ""
 }
