@@ -11,6 +11,3 @@ Map {
   polygon-fill: #fff;
 }
 
-#delft {
-  polygon-fill: red;
-}

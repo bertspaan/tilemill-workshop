@@ -46,6 +46,27 @@
       "srs": "",
       "advanced": {},
       "name": "delft"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        4.341380012264686,
+        51.99827952541136,
+        4.392435801166846,
+        52.02797913174114
+      ],
+      "id": "delft1832",
+      "class": "",
+      "Datasource": {
+        "file": "https://github.com/bertspaan/tilemill-workshop/raw/gh-pages/data/1832/delft_1832.zip",
+        "id": "delft1832",
+        "project": "delft-1832",
+        "srs": "+proj=stere +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.999908 +x_0=155000 +y_0=463000 +ellps=bessel +units=m +no_defs  no_defs <>"
+      },
+      "srs-name": "custom",
+      "srs": "+proj=stere +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.999908 +x_0=155000 +y_0=463000 +ellps=bessel +units=m +no_defs  no_defs <>",
+      "advanced": {},
+      "name": "delft1832"
     }
   ],
   "scale": 1,
