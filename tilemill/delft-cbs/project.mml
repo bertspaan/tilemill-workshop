@@ -1,0 +1,74 @@
+{
+  "bounds": [
+    4.2641,
+    51.9552,
+    4.4454,
+    52.0499
+  ],
+  "center": [
+    4.3581,
+    52.0031,
+    13
+  ],
+  "format": "png8",
+  "interactivity": false,
+  "minzoom": 13,
+  "maxzoom": 17,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "id": "countries",
+      "name": "countries",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
+        "type": "shape"
+      }
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        4.227161933620177,
+        52.061766502903204,
+        4.300503236494212,
+        52.08683586041899
+      ],
+      "id": "delft",
+      "class": "",
+      "Datasource": {
+        "file": "https://gist.github.com/bertspaan/fb84b09154627e15f97e/raw/819d6150cafca337fe18adca72b77cfe3f75e8c8/map.geojson"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "delft"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        4.320965865948198,
+        51.967683996920115,
+        4.40527234721639,
+        52.03120517533991
+      ],
+      "id": "buildings",
+      "class": "",
+      "Datasource": {
+        "file": "https://github.com/bertspaan/tilemill-workshop/raw/gh-pages/data/bag/bag.zip"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "buildings"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "Delft - BAG Buildings",
+  "description": "",
+  "attribution": ""
+}
