@@ -1,18 +1,18 @@
 {
   "bounds": [
-    3.5939,
-    51.3503,
-    6.2444,
-    52.5972
+    4.2641,
+    51.9552,
+    4.4454,
+    52.0499
   ],
   "center": [
-    5.0887,
-    52.0968,
-    10
+    4.3581,
+    52.0031,
+    13
   ],
   "format": "png8",
   "interactivity": false,
-  "minzoom": 10,
+  "minzoom": 13,
   "maxzoom": 17,
   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
   "Stylesheet": [
@@ -46,6 +46,24 @@
       "srs": "",
       "advanced": {},
       "name": "delft"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        4.320965865948198,
+        51.967683996920115,
+        4.40527234721639,
+        52.03120517533991
+      ],
+      "id": "buildings",
+      "class": "",
+      "Datasource": {
+        "file": "https://github.com/bertspaan/tilemill-workshop/raw/gh-pages/data/bag/bag.zip"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "buildings"
     }
   ],
   "scale": 1,
