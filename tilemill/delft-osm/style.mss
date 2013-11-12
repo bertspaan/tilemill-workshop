@@ -1,40 +1,76 @@
+@road: white;
+@road_outline: black;
+
+@rail: #888;
+@rail_outline: #222;
+
+@water: #57d2f5;
+
 Map {
-  background-color: #000;
+  background-color: white;
 }
 
-#buildings {
-  [YEAR<1800] {
-    polygon-fill: #A50026;
+#osm-line::outline {
+  [highway='motorway'],
+  [highway='motorway_link'],
+  [highway='trunk'],
+  [highway='trunk_link'],
+  [highway='primary'],
+  [highway='primary_link'],
+  [highway='secondary'],
+  [highway='secondary_link'],
+  [highway='tertiary'],
+  [highway='tertiary_link'],
+  [highway='unclassified'],
+  [highway='residential'],
+  [highway='footway'],
+  [highway='service'],
+  [highway='pedestrian'] {
+    line-width: 5px;
+  	line-color: @road_outline;
   }
-  [YEAR>=1800][YEAR<1850] {
-    polygon-fill: #D73027;
-  }
-  [YEAR>=1850][YEAR<1900] {
-    polygon-fill: #F46D43;
-  }
-  [YEAR>=1900][YEAR<1930] {
-    polygon-fill: #FDAE61;
-  }
-  [YEAR>=1930][YEAR<1945] {
-    polygon-fill: #FEE090;
-  }
-  [YEAR>=1945][YEAR<1960] {
-    polygon-fill: #FFFFBF;
-  }
-  [YEAR>=1960][YEAR<1975] {
-    polygon-fill: #E0F3F8;
-  }
-  [YEAR>=1975][YEAR<1985] {
-     polygon-fill: #ABD9E9;
-  }
-  [YEAR>=1985][YEAR<1995] {
-    polygon-fill: #74ADD1;
-  }
-  [YEAR>=1995][YEAR<2005] {
-    polygon-fill: #4575B4;
-  }
-  [YEAR>=2005] {
-    polygon-fill: #313695;
-  } 
   
+  [railway='rail'] {
+    line-color: @rail_outline;
+  }
+}
+
+#osm-line {
+  [highway='motorway'],
+  [highway='motorway_link'],
+  [highway='trunk'],
+  [highway='trunk_link'],
+  [highway='primary'],
+  [highway='primary_link'],
+  [highway='secondary'],
+  [highway='secondary_link'],
+  [highway='tertiary'],
+  [highway='tertiary_link'],
+  [highway='unclassified'],
+  [highway='residential'],
+  [highway='footway'],
+  [highway='service'],
+  [highway='pedestrian'] {
+    line-width: 3px;
+  	line-color: @road;
+  }
+  
+  [railway='rail'] {
+    line-color: @rail;
+  }
+}
+
+#osm-polygon::outline {
+  [water='pond'],
+  [natural='water'] {
+    line-color: darken(@water, 30%);
+    line-width: 1.5px;
+  }
+}
+
+#osm-polygon {
+  [water='pond'],
+  [natural='water'] {
+    polygon-fill: @water;
+  }
 }

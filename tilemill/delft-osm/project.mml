@@ -20,50 +20,43 @@
   ],
   "Layer": [
     {
-      "id": "countries",
-      "name": "countries",
-      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "geometry": "polygon",
-      "Datasource": {
-        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
-        "type": "shape"
-      }
-    },
-    {
       "geometry": "polygon",
       "extent": [
-        4.227161933620177,
-        52.061766502903204,
-        4.300503236494212,
-        52.08683586041899
+        3.9407496,
+        51.7827717,
+        4.6473308,
+        52.0618059
       ],
-      "id": "delft",
+      "id": "osm-polygon",
       "class": "",
       "Datasource": {
-        "file": "https://gist.github.com/bertspaan/fb84b09154627e15f97e/raw/819d6150cafca337fe18adca72b77cfe3f75e8c8/map.geojson"
+        "file": "https://github.com/bertspaan/tilemill-workshop/raw/gh-pages/data/osm/delft.osm-polygon.zip"
       },
       "srs-name": "autodetect",
       "srs": "",
       "advanced": {},
-      "name": "delft"
+      "name": "osm-polygon"
     },
     {
-      "geometry": "polygon",
+      "geometry": "linestring",
       "extent": [
-        4.320965865948198,
-        51.967683996920115,
-        4.40527234721639,
-        52.03120517533991
+        4.1101641,
+        51.7379969,
+        4.7838049,
+        52.1089958
       ],
-      "id": "buildings",
+      "id": "osm-line",
       "class": "",
       "Datasource": {
-        "file": "https://github.com/bertspaan/tilemill-workshop/raw/gh-pages/data/bag/bag.zip"
+        "file": "https://github.com/bertspaan/tilemill-workshop/raw/gh-pages/data/osm/delft.osm-line.zip",
+        "id": "osm-line",
+        "project": "delft-osm",
+        "srs": ""
       },
       "srs-name": "autodetect",
       "srs": "",
       "advanced": {},
-      "name": "buildings"
+      "name": "osm-line"
     }
   ],
   "scale": 1,
