@@ -1,0 +1,11 @@
+body {
+	padding: 0;
+  margin: 0;  
+  overflow: hidden;
+}
+
+html, body, #map {
+	height: 100%;
+  background-color: white;
+  font-family: 'Lato', sans-serif;
+}

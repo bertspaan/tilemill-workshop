@@ -12,6 +12,9 @@ Met [TileMill](https://www.mapbox.com/tilemill/), een opensourceprogramma van [M
 Voorbeeldkaarten op TileMill-site:
 - https://www.mapbox.com/tilemill/gallery/
 
+Inleiding _How do web maps work?_:
+- https://www.mapbox.com/developers/guide/
+
 Handboek en crashcourse:
 - https://www.mapbox.com/tilemill/docs/manual/
 - https://www.mapbox.com/tilemill/docs/crashcourse/introduction/
