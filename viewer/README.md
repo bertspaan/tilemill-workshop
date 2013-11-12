@@ -9,7 +9,7 @@ Meer informatie over Leaflet:
 
 ## Hosten van kaarttiles
 
-Je kunt ook eenvoudig je eigen tiles hosten die je met TileMill gemaakt hebt. Dit kan met een aparte tileserver zoals [TileStream](https://github.com/mapbox/tilestream), of door het met TileMill gemaakte `.mbtiles`-bestand uit te pakken - zo'n bestand is een simpele [SQLite-database](http://www.sqlite.org/) die allemaal losse kaartvierkantjes bevat. Met [MBUtil](https://github.com/mapbox/mbutil) is zo'n bestand weer in losse bestanden op te delen, die dan door een willekeurige webserver (of door GitHub) kunnen worden gehost.
+Je kunt ook eenvoudig je eigen tiles hosten die je met TileMill gemaakt hebt. Dit kan met een aparte tileserver zoals [TileStream](https://github.com/mapbox/tilestream), of door het met TileMill gemaakte `.mbtiles`-bestand uit te pakken - zo'n bestand is een simpele [SQLite-database](http://www.sqlite.org/) die allemaal losse kaartvierkantjes bevat. Met [MBUtil](https://github.com/mapbox/mbutil) is zo'n bestand weer in losse bestanden op te delen, die dan door een willekeurige webserver (of door [GitHub](http://pages.github.com/)) kunnen worden gehost.
 
 Gedetailleerde informatie over kaarttiles:
 
