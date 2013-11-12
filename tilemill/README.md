@@ -10,9 +10,9 @@ Deze directory bevat een aantal TileMill-projecten die gebruik maken van open da
 
 De projecten dienen in de `project`-directory van TileMill geplaats te worden:
 
-- Mac OS X: `/Users/<user>/Documents/MapBox`
-- Ubuntu, Linux: `/home/<user>/Documents/MapBox`
-- Windows: `C:\Documents and Settings\<user>\My Documents\MapBox`
+- Mac OS X: `/Users/<user>/Documents/MapBox/project`
+- Ubuntu, Linux: `/home/<user>/Documents/MapBox/project`
+- Windows: `C:\Documents and Settings\<user>\My Documents\MapBox/project`
   
 _Gebruikers van Mac OS X en Linux kunnen gebruik maken van het script `projects.sh`!_
 
