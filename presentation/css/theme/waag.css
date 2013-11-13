@@ -13,24 +13,11 @@ body {
   background-color: white url(waag.png) no-repeat 22px 22px; }
 
 .reveal {
-  /*font-family: "Lucida Grande", sans-serif;*/
-  font-family:"Lucida Grande","Lucida Sans Unicode",'BalanceCompRegular';
+  font-family: "Lucida Grande", sans-serif;
   font-size: 36px;
   font-weight: 200;
   letter-spacing: -0.02em;
   color: black; }
-
-@font-face {
-  font-family:'BalanceCompRegular';
-  src: url(http://waag.org/sites/waag.org/themes/waag/fonts/balancecomp-webfont.eot);
-  src: url(http://waag.org/sites/waag.org/themes/waag/fonts/balancecomp-webfont.eot?#iefix) format('embedded-opentype'),url(http://waag.org/sites/waag.org/themes/waag/fonts/balancecomp-webfont.woff) format('woff'),url(http://waag.org/sites/waag.org/themes/waag/fonts/balancecomp-webfont.ttf) format('truetype'),url(http://waag.org/sites/waag.org/themes/waag/fonts/balancecomp-webfont.svg#BalanceCompRegular)   format('svg');font-weight:normal;font-style:normal;
-}
-
-@font-face {
-  font-family:'BalanceComp-BoldRegular';
-src: url(http://waag.org/sites/waag.org/themes/waag/fonts/balancecomp-bold-webfont.eot);
-src:url(http://waag.org/sites/waag.org/themes/waag/fonts/balancecomp-bold-webfont.eot?#iefix) format('embedded-opentype'),url(http://waag.org/sites/waag.org/themes/waag/fonts/balancecomp-bold-webfont.woff) format('woff'),url(http://waag.org/sites/waag.org/themes/waag/fonts/balancecomp-bold-webfont.ttf) format('truetype'),url(http://waag.org/sites/waag.org/themes/waag/fonts/balancecomp-bold-webfont.svg#BalanceComp-BoldRegular) format('svg');font-weight:bold;font-style:normal;
-}
 
 ::selection {
   color: white;
@@ -48,7 +35,7 @@ src:url(http://waag.org/sites/waag.org/themes/waag/fonts/balancecomp-bold-webfon
 .reveal h6 {
   margin: 0 0 20px 0;
   color: black;
-  font-family:"Lucida Grande","Lucida Sans Unicode",'BalanceCompRegular';
+  font-family: "Lucida Grande";
   line-height: 0.9em;
   letter-spacing: 0.02em;
   text-transform: none;
