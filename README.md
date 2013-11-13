@@ -92,9 +92,7 @@ Nog geen functie om naar GeoJSON te exporteren, maar daar ben ik mee bezig.
 
 ## Style
 
-Wanneer is een kaart mooi? Er zijn eindeloos veel theoriën over wanneer welke lettertypes te gebruiken, hoe labels bij punten te plaatsen en hoe vlakken in te kleuren. 
-
-TileMill wordt geleverd met een aantal voorbeeldprojecten die 
+Wanneer is een kaart mooi? Er zijn eindeloos veel theoriën over wanneer welke lettertypes te gebruiken, hoe labels bij punten te plaatsen en hoe vlakken in te kleuren. Maar het leuke van TileMill is juist dat je een eigen, persoonlijke kaart kunt maken die bij je eigen voorgevingswensen aansluit. De zee mag best rood.
 
 Handige tool voor het genereren van kleurschema's:
 
@@ -114,9 +112,13 @@ TileMill kan overweg met de meest gangbare GIS-bestanden. Voor een volledige lij
 
 http://en.wikipedia.org/wiki/Shapefile
 
+Zo'n beetje de standaardmanier om geografische data uit te wisselen. Punten, lijnen en vlakken moeten elk in een apart bestand, maar verder is er niet zo veel mis mee.
+
 ### GeoJSON
 
 https://github.com/mapbox/togeojson
+
+Op JSON gebaseerd bestandsformaat. Makkelijk te lezen door mensen, en direct in JavaScript te gebruiken. Niet geschikt voor enorme hoeveelheden data, maar juist uitermate geschikt voor webcartografie, Leaflet en TileMill.
 
 ## Coördinatenstelsels
 
