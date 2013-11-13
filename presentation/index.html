@@ -107,12 +107,13 @@
 
         <section>
           databronnen!
+          PDOK
+          BAG
+          OpenStreetMap
+          NLExtract
         </section>
 
-PDOK
-BAG
-OpenStreetMap
-NLExtract
+
 
         <section>
           tools!
@@ -131,10 +132,34 @@ NLExtract
         </section>
 
         <section>
+          <code>https://github.com/bertspaan/tilemill-workshop/blob/gh-pages/data/test.geojson</code>
           <img src="img/tilemill-test3.png" />
         </section>
+        
+        <section>
+          <pre style="font-size: 100%;" class="stretch"><code data-trim contenteditable>
+#test {
+  line-color: #7f0342;
+  line-width: 5px;
+
+  polygon-fill: lighten(#7f0342, 50%);
+
+  [n=1] {
+    polygon-fill: lighten(#7f0342, 20%);
+  }
+
+  [n=4], [n=5] {
+    marker-width: 40px;
+    marker-line-width: 5px;
+    marker-line-color: darken(#678743, 20%);
+    marker-fill: #678743;
+  }
+}
+          </code></pre>
+        </section>	        
           
-          Voorbeeldkaart:  simpele geojson, layermenu, importeer, twee voorbeeldstijlen:
+        <section>
+          <img src="img/tilemill-test4.png" />
         </section>
         
         <section>
@@ -221,7 +246,12 @@ Map {
 
 				<section>
           <h3>Voorbeelden en data:</h3>
-					<h3><a href="https://bertspaan.nl/tilemill-workshop/">bertspaan.nl/tilemill-workshop</a></h3> 
+					<p><a href="https://bertspaan.nl/tilemill-workshop/">bertspaan.nl/tilemill-workshop</a></p> 
+          <h3>Inloggegevens:</h3>          
+          <pre style="font-size: 100%;"><code data-trim>
+user: BK-osgeonldag
+pass: 01.West.430
+          </code></pre>
 				</section>
             
 			</div>
