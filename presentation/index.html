@@ -42,6 +42,11 @@
 					<p>Bert Spaan, Waag Society</p>
 					<p><a href="mailto:bert@waag.org">bert@waag.org</a></p>
 				</section>
+        
+				<section>
+					<h1>Vraag!</h1>
+          <h2>Wie kan CSS?</h2>
+				</section>	
             
 				<section>
 					<a href="http://citysdk.waag.org/buildings/"><img src="img/haarlem.jpg" /></a>
@@ -95,14 +100,75 @@
 }
           </code></pre>
         </section>	
+
+        <section>
+          <pre style="font-size: 100%;" class="stretch"><code data-trim contenteditable>
+#urban {
+  polygon-fill:#9F6;
+  polygon-opacity:0.66;
+  line-color:#9F6;
+  line-opacity:0.33;
+  [zoom=3] { line-width:0.4; }
+  [zoom=4] { line-width:0.6; }
+  [zoom=5] { line-width:0.8; }
+  [zoom=6] { line-width:1; }
+  [zoom>6] { line-width:1.2; }
+}
+          </code></pre>
+        </section>	
         
         <section>
-          Meer stijlvoorbeelden CartoCSS
-        </section>
-
+          <pre style="font-size: 100%;" class="stretch"><code data-trim contenteditable>
+#country-labels[zoom>3] {
+  text-name:'[NAME]';
+  text-face-name:@sans;
+  text-fill:#8EF * 0.7;
+  text-size:10;
+  text-transform:uppercase;
+  text-character-spacing:1;
+  text-wrap-width:40;
+  text-line-spacing:2;
+  text-halo-radius:2;
+  text-halo-fill:rgba(0,0,0,0.75);
+  [zoom=6] { text-size:11; }
+  [zoom=7] { text-size:12; }
+  [zoom=8] { text-size:14; }
+  [zoom>8] { text-size:16; }
+}
+          </code></pre>
+        </section>	 
 
         <section>
-          data. PostGIS, ShapeFile, GeoJSON, CSV, KML
+          <pre style="font-size: 100%;" class="stretch"><code data-trim contenteditable>
+#japan {
+  raster-opacity:1;
+  raster-scaling:gaussian;
+  raster-colorizer-default-mode:exact;
+  raster-colorizer-default-color: transparent;
+  raster-colorizer-epsilon:0.41;
+  raster-colorizer-stops:
+    stop(0, transparent)
+    stop(1, @water)
+    stop(2, @urban)
+    stop(4, @agriculture)
+    stop(5, @grass)
+    stop(9, @forest)
+    stop(11, @snow)
+}
+          </code></pre>
+        </section>	 
+
+        <section>
+          <h1>Data!</h1>
+          <ul>
+            <li class="fragment">ShapeFile</li>
+            <li class="fragment">PostGIS</li>
+            <li class="fragment">GeoJSON</li>
+            <li class="fragment">KML</li>
+            <li class="fragment">CSV</li>
+            <li class="fragment">SQLite</li>
+            <li class="fragment">GeoTIFF</li>
+          </ul>
         </section>
 
         <section>

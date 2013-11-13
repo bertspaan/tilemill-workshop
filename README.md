@@ -148,6 +148,15 @@ http://geojson.io/
 
 Web-editor, kan verschillende GIS-bestanden openen, bewerken en als GeoJSON opslaan. Heel handig om kleine geografische bestanden te maken en te bewerken.
 
+### GitHub
+
+GitHub is ook te gebruiken om eenvoudig GIS-bestanden te hosten. Github kan GeoJSON-bestanden direct weergeven, en [geojson.io](http://geojson.io) kan deze bestanden direct van GitHub openen, bewerken en opslaan
+
+- https://help.github.com/articles/mapping-geojson-files-on-github
+- http://macwright.org/2013/07/26/geojsonio.html
+
+Ook handig: TileMill kan ook allerlei bestanden direct vanaf een GitHub-adres openen.
+
 ### PostGIS
 
 http://postgis.net/
