@@ -160,32 +160,91 @@
 
         <section>
           <h1>Data!</h1>
-          <ul>
-            <li class="fragment">ShapeFile</li>
-            <li class="fragment">PostGIS</li>
-            <li class="fragment">GeoJSON</li>
-            <li class="fragment">KML</li>
-            <li class="fragment">CSV</li>
-            <li class="fragment">SQLite</li>
-            <li class="fragment">GeoTIFF</li>
-          </ul>
-        </section>
-
-        <section>
-          databronnen!
-          PDOK
-          BAG
-          OpenStreetMap
-          NLExtract
-        </section>
-
-
-
-        <section>
-          tools!
         </section>
         
         <section>
+          <h1>Tilemill ondersteunt:</h1>
+          <h2>
+            <span class="fragment">ShapeFile</span><span class="fragment">, PostGIS</span><span class="fragment">, GeoJSON</span><span class="fragment">, KML</span><span class="fragment">, CSV</span><span class="fragment">, SQLite</span><span class="fragment">, GeoTIFF</span>
+          </h2>
+        </section>
+
+        <section>
+          <h1>Databronnen!</h1>
+        </section>
+
+        <section>
+          <img src="img/data.overheid.nl.png" />
+        </section>
+        
+        <section>          
+          <img src="img/pdok.png" />
+        </section>          
+        
+        <section>
+          <img src="img/nlextract.png" />
+        </section>
+
+        <section>
+          <img src="img/openstreetmap.png" />
+        </section>
+
+        <section>
+          <img src="img/naturalearth1.png" />
+        </section>
+
+        <section>
+          <img src="img/naturalearth2.png" />
+        </section>
+
+        <section>
+          <h1>Tools!</h1>
+        </section>
+          
+        <section>          
+          <img src="img/geojson.io.png" />
+        </section>          
+        
+        <section>
+          <img src="img/github.png" />
+        </section>
+
+        <section>
+          <pre class="stretch"><code data-trim contenteditable>
+import ogr
+import pylab
+from numpy import asarray
+
+from shapely.wkb import loads
+
+source = ogr.Open("/var/gis/data/world/world_borders.shp")
+borders = source.GetLayerByName("world_borders")
+
+fig = pylab.figure(1, figsize=(4,2), dpi=300)
+
+while 1:
+    feature = borders.GetNextFeature()
+    if not feature:
+        break
+
+    geom = loads(feature.GetGeometryRef().ExportToWkb())
+    a = asarray(geom)
+    pylab.plot(a[:,0], a[:,1])
+
+pylab.show()
+          </code></pre>
+        </section>	
+          
+        <section>
+          <img src="img/leaflet.png" />
+        </section>
+          
+        <section>
+          <img src="img/qgis2.png" />
+        </section>
+        
+        <section>
+          <h1>TileMill 101</h1>
           <a href="https://github.com/bertspaan/tilemill-workshop/blob/gh-pages/data/test.geojson">test.geojson</a>
         </section>
           
