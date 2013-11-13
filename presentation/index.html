@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>TileMill</title>
+
+		<meta name="description" content="Waag Society - Institute for Art, Science and Technology">
+		<meta name="author" content="Waag Society">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/waag.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>TileMill</h1>
+					<p>Bert Spaan, Waag Society</p>
+					<p><a href="mailto:bert@waag.org">bert@waag.org</a></p>
+				</section>
+            
+				<section>
+					<a href="http://citysdk.waag.org/buildings/"><img src="img/haarlem.jpg" /></a>
+				</section>
+
+				<section>
+					<a href="http://casper30.nl/"><img src="img/casper.png" /></a>
+				</section>
+        
+				<section>
+					<h1>Programma!</h1>
+          <h2>Eerst: <b>Introductie!</b></h2>
+				  <h2 class="fragment">Dan: <b>TileMill!</b></h2>
+          <h2 class="fragment">Daarna: <b>Workshop! Kaart maken!</b></h2>
+				</section>
+        
+				<section>
+					<h1>Open data</h1>
+				</section>		
+
+				<section>
+					<img src="img/bestanden.png" />
+				</section>		
+
+				<section>
+					<img src="img/arch.png" />
+				</section>		
+
+				<section>
+					<img src="img/tilemill.png" />
+				</section>		
+
+				<section>
+					<img src="img/qgis.png" />
+				</section>
+        
+        <section>
+          <pre style="font-size: 100%;" class="stretch"><code data-trim contenteditable>
+@water: blue;
+@land: green;
+            
+#countries {
+  line-color: black;
+  line-width: 2px;
+  
+  polygon-fill: @land;
+}
+
+#water {
+  polygon-fill: @water;
+}
+          </code></pre>
+        </section>	
+        
+        <section>
+          Meer stijlvoorbeelden CartoCSS
+        </section>
+
+
+        <section>
+          data. PostGIS, ShapeFile, GeoJSON, CSV, KML
+        </section>
+
+        <section>
+          databronnen!
+        </section>
+
+PDOK
+BAG
+OpenStreetMap
+NLExtract
+
+        <section>
+          tools!
+        </section>
+        
+        <section>
+          Voorbeeldkaart:  simpele geojson, layermenu, importeer, twee voorbeeldstijlen:
+        </section>
+        
+        <section>
+          <img src="img/staphorst.png" />
+        </section>
+
+        <section>
+          <pre style="font-size: 100%;" class="stretch"><code data-trim contenteditable>
+SELECT
+  identificatie, bouwjaar, geom 
+FROM
+  pand;
+          </code></pre>
+        </section>
+                
+        <section>
+          <pre style="font-size: 70%;" class="stretch"><code data-trim contenteditable>          
+Map {
+  background-color: black;
+}
+
+#pand {
+  [bouwjaar<1800] { polygon-fill: #A50026; }
+  [bouwjaar>=1800][bouwjaar<1850] { polygon-fill: #D73027; }
+  [bouwjaar>=1850][bouwjaar<1900] {polygon-fill: #F46D43; }
+  [bouwjaar>=1900][bouwjaar<1930] { polygon-fill: #FDAE61; }
+  [bouwjaar>=1930][bouwjaar<1945] { polygon-fill: #FEE090; }
+  [bouwjaar>=1945][bouwjaar<1960] { polygon-fill: #FFFFBF; }
+  [bouwjaar>=1960][bouwjaar<1975] { polygon-fill: #E0F3F8; }
+  [bouwjaar>=1975][bouwjaar<1985] { polygon-fill: #ABD9E9; }
+  [bouwjaar>=1985][bouwjaar<1995] { polygon-fill: #74ADD1; }
+  [bouwjaar>=1995][bouwjaar<2005] { polygon-fill: #4575B4; }
+  [bouwjaar>=2005] { polygon-fill: #313695; } 
+}          
+          </code></pre>
+        </section>
+
+        <section>
+          <img src="img/volkskrant.png" />
+        </section>
+
+				<section>
+					<h1>Type kaarten</h1>
+				</section>
+        
+				<section>
+					<img src="img/zwitserland.jpg" />
+				</section>
+        
+				<section>
+					<img src="img/osm.jpg" />
+				</section>        
+
+				<section>
+					<img src="img/platen.png" />
+				</section>        
+
+				<section>
+					<img src="img/shadow-play.png" />
+				</section>        
+
+				<section>
+					<img src="img/areaal.gif" />
+				</section>
+
+				<section>
+					<h1>OK! Klaar!</h1> 
+          <h1>Kaart maken!</h1>
+				</section>
+
+				<section>
+					<h1>Doel:</h1> 
+					<h2>Kaart van Delft met <b>open data</b></h2> 
+				</section>
+      
+      	<section>
+          <ul>
+            <li><h2>Groepjes van 2-3</h2></li>
+            <li><h2>Wat wil je vertellen?</h2></li>
+            <li><h2>Is er data?</h2></li>
+					  <li><h2>Hoe moet het er uit zien?</h2></li>
+          </li>
+				</section>
+
+				<section>
+          <h3>Voorbeelden en data:</h3>
+					<h3><a href="https://bertspaan.nl/tilemill-workshop/">bertspaan.nl/tilemill-workshop</a></h3> 
+				</section>
+            
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+        width: 1024,
+        height: 768,
+        margin: 0.06,
+        minScale: 0.8,
+        maxScale: 1.2,
+        
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: 'waag', // available themes are in /css/theme
+				transition: 'fade', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
