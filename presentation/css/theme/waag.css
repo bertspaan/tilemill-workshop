@@ -48,7 +48,7 @@ src:url(http://waag.org/sites/waag.org/themes/waag/fonts/balancecomp-bold-webfon
 .reveal h6 {
   margin: 0 0 20px 0;
   color: black;
-  font-family: "Lucida Grande";
+  font-family:"Lucida Grande","Lucida Sans Unicode",'BalanceCompRegular';
   line-height: 0.9em;
   letter-spacing: 0.02em;
   text-transform: none;
